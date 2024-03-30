@@ -82,12 +82,12 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
 
                 <Form.Group 
                     className="mb-3" 
-                    controlId="formBasicEmail"
-                    value = {nombre}
-                    onChange = {(e) => setNombre(e.target.value)}>
+                    controlId="formName">
                     <Form.Control 
                         type="text" 
-                        placeholder="Nombre" />
+                        placeholder="Nombre" 
+                        value = {nombre}
+                        onChange = {(e) => setNombre(e.target.value)}/>
                     <Form.Text 
                         className="text-muted"
                         ></Form.Text>
@@ -95,12 +95,12 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
 
                 <Form.Group 
                     className="mb-3" 
-                    controlId="formBasicEmail"
-                    value = {email}
-                    onChange = {(e) => setEmail(e.target.value)}>
+                    controlId="formBasicEmail">
                     <Form.Control 
                         type="email"    
-                        placeholder="tuemail@ejemplo.com" />
+                        placeholder="tuemail@ejemplo.com" 
+                        value = {email}
+                        onChange = {(e) => setEmail(e.target.value)}/>
                     <Form.Text 
                         className="text-muted"
                         ></Form.Text>
@@ -108,22 +108,22 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
 
                 <Form.Group 
                     className="mb-3" 
-                    controlId="formBasicPassword"
-                    value = {contraseña}
-                    onChange = {(e) => setContraseña(e.target.value)}>
+                    controlId="formBasicPassword">
                     <Form.Control 
                         type="password" 
-                        placeholder="Contraseña" />
+                        placeholder="Contraseña" 
+                        value = {contraseña}
+                        onChange = {(e) => setContraseña(e.target.value)}/>
                 </Form.Group> 
 
                 <Form.Group 
                     className="mb-3" 
-                    controlId="formBasicPassword"
-                    value = {confirmarContraseña}
-                    onChange = {(e) => setConfirmarContraseña(e.target.value)}>
+                    controlId="formBasicPassword">
                     <Form.Control 
                         type="password" 
-                        placeholder="Confirma tu contraseña" />
+                        placeholder="Confirma tu contraseña" 
+                        value = {confirmarContraseña}
+                        onChange = {(e) => setConfirmarContraseña(e.target.value)}/>
                 </Form.Group>
         
                 <Button 
