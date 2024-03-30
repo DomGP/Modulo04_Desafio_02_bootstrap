@@ -86,6 +86,7 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
                     <Form.Control 
                         type="text" 
                         placeholder="Nombre" 
+                        autoComplete="username"
                         value = {nombre}
                         onChange = {(e) => setNombre(e.target.value)}/>
                     <Form.Text 
@@ -99,6 +100,7 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
                     <Form.Control 
                         type="email"    
                         placeholder="tuemail@ejemplo.com" 
+                        autoComplete="username"
                         value = {email}
                         onChange = {(e) => setEmail(e.target.value)}/>
                     <Form.Text 
@@ -112,6 +114,7 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
                     <Form.Control 
                         type="password" 
                         placeholder="Contraseña" 
+                        autoComplete="new-password"
                         value = {contraseña}
                         onChange = {(e) => setContraseña(e.target.value)}/>
                 </Form.Group> 
@@ -122,6 +125,7 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
                     <Form.Control 
                         type="password" 
                         placeholder="Confirma tu contraseña" 
+                        autoComplete="new-password"
                         value = {confirmarContraseña}
                         onChange = {(e) => setConfirmarContraseña(e.target.value)}/>
                 </Form.Group>
