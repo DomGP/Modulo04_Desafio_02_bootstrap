@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family:sans-serif;
+  background-image: linear-gradient(rgb(151, 151, 244),lavender );
+}
+.cardStyle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  padding:2em 2em 3.5em 2em;
+  border-radius: 20px;
+  background-color: white;
+
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.iconStyle{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 0.5em;
+}
+.icons{
+  width: auto;
+  height: 2.5em;
+}
+a:active{
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+.iconAlert{
+  width: auto;
+  height: 1.2em;
+}
+.textAlert{
+  color: rgb(79, 75, 75);
+}
+.subtitleStyle{
+  margin-top: 0.5em;
+  
+}
+.formStyle{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+}
+.buttonStyle{
+  /* margin-top: 2em !important; */
+  padding: 0.5em 4.2em 0.5em 4.2em;
+  margin-bottom: 1em;
+}
