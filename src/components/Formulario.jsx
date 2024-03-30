@@ -118,7 +118,7 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
 
                 <Form.Group 
                     className="mb-3" 
-                    controlId="formBasicPassword">
+                    controlId="formBasicPasswordRepeat">
                     <Form.Control 
                         type="password" 
                         placeholder="Confirma tu contraseña" 
