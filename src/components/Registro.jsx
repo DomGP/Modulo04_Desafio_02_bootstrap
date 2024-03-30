@@ -15,11 +15,11 @@ const Registro = ({messageAlert, setMensaje}) => {
                     />
                 <div className="iconStyle">
                     <SocialButton 
-                        icon = 'public/assets/imgs/iconFacebook.png'/>
+                        icon = '/assets/imgs/iconFacebook.png'/>
                     <SocialButton 
-                        icon = 'public/assets/imgs/iconGitHub.png'/>
+                        icon = '/assets/imgs/iconGitHub.png'/>
                     <SocialButton 
-                        icon = 'public/assets/imgs/iconLinkedIn.png' />
+                        icon = '/assets/imgs/iconLinkedIn.png' />
                 </div>
                 <Subtitle 
                     textSubtitle = 'o usa tu email para registrarte'
