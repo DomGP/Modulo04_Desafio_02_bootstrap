@@ -30,9 +30,9 @@ const Registro = ({messageAlert, setMensaje}) => {
                     messageAlert = {messageAlert} 
                     setMensaje = {setMensaje} 
                     colorError = 'danger'
-                    iconAlertaError = 'public/assets/imgs/iconError.svg'
+                    iconAlertaError = '/assets/imgs/iconError.svg'
                     colorExito = 'success'
-                    iconAlertaExito = 'public/assets/imgs/iconCheck.svg'/>
+                    iconAlertaExito = '/assets/imgs/iconCheck.svg'/>
             </div>
         </>
     )
