@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -16,6 +16,15 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
     const [errorEmail, setErrorEmail] = useState(false)
     const [correcto, setCorrecto] = useState(false)
     
+    /* useEffect(()=>{
+        if(correcto){
+            setNombre('');
+            setEmail('');
+            setContraseña('');
+            setConfirmarContraseña('')
+        }
+    }, [correcto]) */
+
     const validarInput = (e) => {
         e.preventDefault()
         const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -90,7 +99,7 @@ const Formulario = ({buttonColor, buttonText, messageAlert, setMensaje, colorErr
                     value = {email}
                     onChange = {(e) => setEmail(e.target.value)}>
                     <Form.Control 
-                        type="text"    
+                        type="email"    
                         placeholder="tuemail@ejemplo.com" />
                     <Form.Text 
                         className="text-muted"

@@ -15,11 +15,11 @@ const Registro = ({messageAlert, setMensaje}) => {
                     />
                 <div className="iconStyle">
                     <SocialButton 
-                        icon = './src/assets/imgs/iconFacebook.png'/>
+                        icon = './public/assets/imgs/iconFacebook.png'/>
                     <SocialButton 
-                        icon = './src/assets/imgs/iconGitHub.png'/>
+                        icon = './public/assets/imgs/iconGitHub.png'/>
                     <SocialButton 
-                        icon = './src/assets/imgs/iconLinkedIn.png' />
+                        icon = './public/assets/imgs/iconLinkedIn.png' />
                 </div>
                 <Subtitle 
                     textSubtitle = 'o usa tu email para registrarte'
@@ -30,9 +30,9 @@ const Registro = ({messageAlert, setMensaje}) => {
                     messageAlert = {messageAlert} 
                     setMensaje = {setMensaje} 
                     colorError = 'danger'
-                    iconAlertaError = './src/assets/imgs/iconError.svg'
+                    iconAlertaError = './public/assets/imgs/iconError.svg'
                     colorExito = 'success'
-                    iconAlertaExito = './src/assets/imgs/iconCheck.svg'/>
+                    iconAlertaExito = './public/assets/imgs/iconCheck.svg'/>
             </div>
         </>
     )
